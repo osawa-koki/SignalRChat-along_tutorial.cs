@@ -2,7 +2,7 @@
 
 SignalR(ASP.NET)のマイクロソフト公式チュートリアルに作成した学習目的プロジェクト。
 
-![サンプル画像](dev\data\sample.gif)
+![サンプル画像](dev/data/sample.gif)
 
 ## 開発環境
 
