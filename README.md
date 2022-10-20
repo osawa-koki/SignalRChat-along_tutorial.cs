@@ -1,5 +1,7 @@
 # SignalRChat
 
+SignalR(ASP.NET)のマイクロソフト公式チュートリアルに作成した学習目的プロジェクト。
+
 ## 参考資料(目を通しておきたい資料)
 
 Visual Studioに関する詳細。  
