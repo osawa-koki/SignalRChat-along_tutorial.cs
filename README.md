@@ -4,6 +4,8 @@ SignalR(ASP.NET)のマイクロソフト公式チュートリアルに作成し�
 
 ## 参考資料(目を通しておきたい資料)
 
+- [対象チュートリアル](https://learn.microsoft.com/ja-jp/aspnet/core/tutorials/signalr?view=aspnetcore-6.0&tabs=visual-studio)
+
 Visual Studioに関する詳細。  
 プロジェクト作成時の初期画面に表示されて、気になったからメモ。  
 
