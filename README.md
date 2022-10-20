@@ -2,6 +2,8 @@
 
 SignalR(ASP.NET)のマイクロソフト公式チュートリアルに作成した学習目的プロジェクト。
 
+![サンプル画像](dev\data\sample.gif)
+
 ## 参考資料(目を通しておきたい資料)
 
 - [対象チュートリアル](https://learn.microsoft.com/ja-jp/aspnet/core/tutorials/signalr?view=aspnetcore-6.0&tabs=visual-studio)
