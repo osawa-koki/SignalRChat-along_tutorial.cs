@@ -1,6 +1,6 @@
 # SignalRChat
 
-SignalR(ASP.NET)のマイクロソフト公式チュートリアルに沿ってに作成した学習目的プロジェクト。
+SignalR(ASP.NET)のマイクロソフト公式チュートリアルに沿って作成した学習目的プロジェクト。
 
 ![サンプル画像](dev/data/sample.gif)
 
