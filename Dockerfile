@@ -7,14 +7,14 @@ EXPOSE 7777
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ./SignalRChat/SignalRChat.csproj .
-RUN dotnet restore ./SignalRChat-along_tutorial.cs.csproj
-COPY ./SignalRChat-along_tutorial.cs .
-RUN dotnet build ./SignalRChat-along_tutorial.cs.csproj -c Release -o /app/build
+RUN dotnet restore ./SignalRChat.cs.csproj
+COPY ./SignalRChat.cs .
+RUN dotnet build ./SignalRChat.cs.csproj -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish SignalRChat-along_tutorial.cs.csproj -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish SignalRChat.cs.csproj -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SignalRChat-along_tutorial.cs.dll"]
+ENTRYPOINT ["dotnet", "SignalRChat.cs.dll"]
