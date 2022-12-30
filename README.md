@@ -2,7 +2,17 @@
 
 SignalR(ASP.NET)のマイクロソフト公式チュートリアルに沿って作成した学習目的プロジェクト。
 
-![サンプル画像](dev/data/sample.gif)
+![サンプル画像](dev/data/sample.gif)  
+
+## 実行方法
+
+```shell
+docker build -t signalr-chat .
+docker run -p 80:7777 -it --rm --name my-signalr-chat signalr-chat
+
+# 一行で書くなら、、、
+docker build -t signalr-chat . && docker run -p 80:7777 -it --rm --name my-signalr-chat signalr-chat
+```
 
 ## 開発環境
 
@@ -12,6 +22,19 @@ SignalR(ASP.NET)のマイクロソフト公式チュートリアルに沿って�
 | Visual Studio | 2022 |
 | .NET | 6.0 |
 | C# | .NET依存 |
+
+## デプロイ設定(Render.com)
+
+| キー | バリュー |
+| ---- | ---- |
+| Name | signalr-chat |
+| Region | Oregon(US West) |
+| Branch | main |
+| Root Directory |  |
+| Environment | Docker |
+| Dockerfile Path | ./Dockerfile |
+| Docker Build Context Directory |  |
+| Docker Command |  |
 
 ## 参考資料(目を通しておきたい資料)
 
