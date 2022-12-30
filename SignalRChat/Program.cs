@@ -26,4 +26,4 @@ app.UseAuthorization();
 app.MapRazorPages();
 app.MapHub<ChatHub>("/chatHub");
 
-app.Run();
+app.Run("http://+:7777");
